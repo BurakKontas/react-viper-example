@@ -1,5 +1,4 @@
 # Viper Pattern - TanStack + Ant Design Project Structure
-```
 
 ## Folder Structure
 
