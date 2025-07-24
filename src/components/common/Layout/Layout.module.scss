@@ -1,0 +1,51 @@
+@use '../../../styles/variables.scss' as *;
+
+.layout {
+  min-height: 100vh;
+}
+
+.header {
+  background: $primary-color;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: white !important;
+  margin: 0;
+}
+
+.sider {
+  background: white;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  border-right: none;
+  height: 100%;
+  
+  .ant-menu-item {
+    margin: 4px 8px;
+    border-radius: 6px;
+    
+    &:hover {
+      background-color: $hover-color;
+    }
+    
+    &.ant-menu-item-selected {
+      background-color: $primary-color;
+      
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 24px;
+  background: $background-color;
+  min-height: calc(100vh - 64px);
+}

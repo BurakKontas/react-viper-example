@@ -1,0 +1,80 @@
+@use '../../../../styles/variables.scss' as *;
+
+.card {
+  height: 100%;
+  box-shadow: $card-shadow;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.userName {
+  margin: 0 !important;
+  color: $text-color;
+  font-size: 18px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  color: $primary-color;
+  font-size: 14px;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: $background-color;
+  border-radius: 6px;
+  border-left: 3px solid $primary-color;
+}
+
+.companyName {
+  font-weight: 600;
+  color: $text-color;
+}
+
+.companyCatch {
+  font-style: italic;
+  font-size: 13px;
+}
+
+.addressInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.address {
+  color: $text-color-secondary;
+  font-size: 14px;
+}
